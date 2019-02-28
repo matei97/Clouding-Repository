@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<button (click)="getStatusFromService()">Get Services Status</button>
+<button (click)="getCatAPIMetric()">Get CAT API METRICS</button>
+<button (click)="getHolidayAPIMetric()">Get Holiday API METRICS</button>
+<button (click)="runScripts()">Run Parallel Scripts</button>
+
+
+
+<p> HolidayAPI Status is {{StatusModel.HolidayAPIStatus}}</p>
+<p> CatAPI Status is {{StatusModel.CatAPIStatus}}</p>
+
+<ul *ngFor="let item of CatApiMetricModel.response;let i=index;">
+  <li>
+    <img src={{item}}>
+    <p>Time response is : {{CatApiMetricModel.time_response[i]}}</p>
+  </li>
+</ul>
+<ul *ngFor="let item of HolidayApiMetricModel.response;let i=index;">
+  <li>
+    <p> Holiday Name : {{item.name}}  and the date is {{item.date}}</p>
+    <p>Time response is : {{HolidayApiMetricModel.time_response[i]}}</p>
+
+  </li>
+</ul>
