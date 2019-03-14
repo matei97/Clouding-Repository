@@ -1,3 +1,6 @@
+
+python3 main.py
+
 Cloud-Computing prof. Lenuta Alboaie
 Universitatea "Alexandru Ioan Cuza" Iasi
 Matei Andrei Madalin A2
